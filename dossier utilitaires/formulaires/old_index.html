@@ -1,0 +1,100 @@
+
+
+<!DOCTYPE HTML>  													
+<html lang="Fr">
+
+	<head>
+
+		<title>TP Formulaire de réservation</title>		
+		<meta charset="utF-8"/>	
+		<link rel="stylesheet" href="reset.css">									
+		<link rel="stylesheet" href="formulaires.css">
+
+	<head>  
+
+	<body> 
+		<header>
+			<h1>
+				Formulaire de résevation
+			</h1>
+		</header>
+
+		<section>
+			<fieldset>
+				<legende>Mes coordonnées</legende>
+
+			<div class="formulaires_coordonnees">
+				<form method="post" action="index.html">
+
+
+						<label for="nom">Nom</label>
+						<input type="text" name="nom" id="nom" autofocus size="5" maxlength="30" />
+
+
+
+						<label for="prenom">Prénom</label>
+						<input class="input1" type="text" name="prenom" id="prenom" size="5" maxlength="30" />
+
+
+			   		<p class="formulaires_email">
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" size="50" maxlength="30" />
+			   		</p>
+
+			   		<p class="formulaires_adresse">
+						<label for="adresse">Adresse</label>
+						<textarea name="textarea" placeholder="Adresse" rows="3" cols="50"></textarea>
+						<input type="text" name="codep" id="codep" placeholder="Code postal" size="10" maxlength="5" />
+						<input type="text" name="ville" id="ville" placeholder="Ville" size="39" maxlength="40" />
+			   		</p>
+			   	
+
+			   		<p class="lib_voyage">Mon voyage</p>
+			   		<p class="formulaires_depart">
+						<label for="depart">Départ</label>
+					<!--	  <input type="date" name="depart" id="depart" /> -->
+						<select name="depart">
+							<option value="Pays">...</option>
+							<option value="France">France</option>
+							<option value="Chine">Chine</option>
+						</select>
+			   		</p>
+
+			   		<p class="formulaires_arrivee">
+						<label for="prenom">Arrivée</label>
+					<!--	<input type="date" name="arrivee" id="arrivee" /> -->
+						<select name="arrivee">
+							<option value="Pays">...</option>
+							<option value="France">France</option>
+							<option value="Chine">Chine</option>n>
+						</select>
+			   		</p>
+
+			   		<p class="lib_hebergement">Mon hébergement</p>
+			   	    <p class="formulaires_classe">
+				   		<label for="depart">Classe</label> 
+				   		<input type="radio" name="classe" value="classe1" checked id="classe1" />* 
+				   		<input type="radio" name="classe" value="classe2" id="classe2" />** 
+				   		<input type="radio" name="classe" value="classe3" id="classe3" />*** 
+				   		<input type="radio" name="classe" value="classe4" id="classe4" />**** 
+				   		<input type="radio" name="classe" value="classe5" id="classe5" />**** 
+			   		</p>
+
+			   		<p class="formulaires_options">
+						<label for="depart">Options</label>
+						<input type="checkbox" name="animaux" id="animaux" /> Animaux
+						<input type="checkbox" name="piscine" id="piscine" /> Piscine
+						<input type="checkbox" name="television" id="television" /> Télévision
+					</p>
+					<p class="formulaires_submit">
+					<button type="submit" title="toto" 
+						STYLE= "background-color: #e5af1b; border-radius: 5px 5px 5px 5px; padding-left: 20px; padding-right: 20px;">Réserver</button>
+					</p>
+			   	</form>
+			</div>
+		</section>
+	</body>
+</html>
+
+
+

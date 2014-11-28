@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+
+  <head>
+    <title>TP Blog vassigh</title>
+    <link rel="stylesheet" href="blog.css">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+    
+  </head>
+<body>
+		<form class="login" action="register.php" method="POST">
+		<h2>
+			Inscription 
+		</h2>
+		<p>
+			<label for="nom">Username :</label>
+			<input type="text" name="username" id="username" required placeholder="Username"/>
+		</p>
+	   	<p>
+			<label  for="pass">Password :</label>
+			<input 
+			     <?php  
+			     	if (  $_SESSION["err_password"] == "o" )
+			     	{ 
+			     		echo ' class="back_rouge"'; 
+			     	} 
+			     	else
+			     	{ 
+			     		echo ' class="back_blanc"'; 
+			     	} 
+			      ?>
+			      type="password" name="password" id="password" required placeholder="Password" />
+		</p>
+	   	<p>
+			<label for="pass">Ressaisir le password :</label>
+			<input
+			     <?php 
+			     if (  $_SESSION["err_password2"] == "o" )
+			     {
+			     	echo ' class="back_rouge"';
+			     } 
+			     else
+			     { 
+			     	echo ' class="back_blanc"'; 
+			     } 
+			     ?>
+			     type="password" name="password2" id="password2" required placeholder="Password" />
+		</p>
+		<p>
+			<label for="email">Email :</label>
+			<input type="text" name="email" id="email" required placeholder="Email"/>
+		</p>
+
+		<input class="margin_left" type="submit" value="Validez">
+		<a class="margin_left" href="login.php" target="_blank"> <input type="button" value="Annuler"> </a>
+		</form>
+
+		<p class="messages_erreur">
+			<?php
+				if ( $message_err != "" ) echo "Messages d'erreur" . $message_err . '<br>';
+			?>
+		</p>
+		
+</body>
+</html>
+

@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>  													
+<html lang="fr">
+
+    <head>
+ 		<title>TP Flash</title>		
+		<meta charset="utF-8"/>	
+    	<link rel="stylesheet" href="normalize.css">  
+    	<style>
+    		#myCanvas{
+    			display: block;
+    			margin: 30px auto;
+    			border:10px dashed: #999;
+    		}
+    	</style> 	
+    </head>
+    <body>
+        <h1>C'est CANVAS</h1>
+		 <canvas id="myCanvas" width="600" height="600">
+		 	votre navigation ne traite pas le Canvas
+		</canvas> 
+
+		<script type="text/javascript">
+            var convas = document.getElementById("myCanvas");
+            var context = convas.getContext("2d");
+            context.fillStyle = "#333";
+            context.fillRect(0,0,150,75);
+
+
+
+		</script>
+
+
+    </body>
+
+</html>

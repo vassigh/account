@@ -1,0 +1,44 @@
+
+
+/* CSS Morpion  */
+
+
+
+h1{
+	margin-left: 30%;
+	margin-bottom:  10%;
+}
+table{
+	float: 				left;
+	vertical-align: 	top;
+	margin-left:  		10%;
+	margin-right:  		2%;
+	border-style:  		solid;
+	border-width:  		8px;
+	background-color:  	red;
+	padding: 			20px;
+
+}
+
+#formulaire{
+	float: 				left;
+	vertical-align: 	top;
+	margin-top:  		-3%;
+}
+
+
+
+td{
+	width:  70px;
+	height: 70px;
+	background-color:  	white;
+	text-align: center;
+}
+
+#bas
+{
+   clear:both;
+}
+
+
+

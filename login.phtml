@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+
+	<head>
+	   <title>TP Blog vassigh</title>
+	   <link rel="stylesheet" href="blog.css">
+	   <meta charset="utf-8">
+	   <meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+	</head>
+	<body>
+		<form class="login" action="login.php" method="POST">
+		<p>
+
+			<label <?php if ($err_email==false) {echo'class="rouge"';}?> for="email">Email :</label>
+			<input
+			 <?php
+			     if (  $_SESSION["err_email"] == "o" )
+			     {
+			     	echo ' class="back_rouge"';
+			     } 
+			     else
+			     { 
+			     	echo ' class="back_blanc"'; 
+			     } 
+			?>
+			type="email" name="email" id="email" required placeholder="Adresse mail"/>
+		</p>
+
+	   	<p>
+			<label <?php if ($err_email==false) {echo'class="rouge"';}?>for="pass">Mot de passe :</label>
+			<input
+			 <?php
+			     if (  $_SESSION["err_password"] == "o" )
+			     {
+			     	echo ' class="back_rouge"';
+			     } 
+			     else
+			     { 
+			     	echo ' class="back_blanc"'; 
+			     } 
+			  ?>
+			  type="password" name="pass" id="pass" required placeholder="Mot de passe" />
+		</p>
+		<input type="submit" value="Validez"> 
+
+		<p>
+			<a href="register.php" target="_blank"> <input type="button" value=" Créer un compte"> </a>
+		</p>
+		</form>
+
+		<p class="messages_erreur">
+			<?php
+				if ( $message_err != "" ) echo "Messages d'erreur" . '<br>' . $message_err;
+			?>
+		</p>
+		
+	</body>
+</html>
+
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>  													
+<html lang="Fr">
+
+<!--   ****************   -->
+<!--        Morpion		  -->	
+<!--   ****************   -->
+
+	<head>
+
+		<title>TP Javascript</title>		
+		<meta charset="utF-8"/>
+		<script src="scripts/morpion.js"></script>	
+		<link rel="stylesheet" href="styles/morpion.css">
+		<script src="scripts/utiles.js"></script>
+		<script src="scripts/jquery-1.11.1.js"></script>
+
+	</head>   
+
+	<body>
+
+		<h1>Morpion</h1>
+
+		<div>
+			<table>
+				<tr>
+					<td data-index="1" id="td0"></td>
+					<td data-index="2" id="td1"></td>
+					<td data-index="3" id="td2"></td>
+				</tr> 
+				<tr>
+					<td data-index="4" id="td3"></td>
+					<td data-index="5" id="td4"></td>
+					<td data-index="6" id="td5"></td>
+				</tr>
+				<tr> 
+					<td data-index="7" id="td6"></td>
+					<td data-index="8" id="td7"></td>
+					<td data-index="9" id="td8"></td>
+				</tr>
+			</table>
+
+
+			<form id="formulaire">
+			    <p class="formulaire">
+			    	<p>
+						<label for="nom1">Nom du premier qui joue avec la croix</br></label>
+						<input class="nom1" type="text" name="nom1" id="nom_joueur_1" autofocus size="30" maxlength="30"/>
+					</p>
+
+					<p>
+						<label for="nom2">Nom du second joueur avec le rond</br></label>
+						<input class="nom2" type="text" name="nom2" id="nom_joueur_2" autofocus size="30" maxlength="30"/>
+					</p>
+				</p>		
+
+				<p class="valider">
+					<input class="submit" type="submit" value="Go!" />		
+				</p>
+
+			</form>
+
+			<div id="bas"></div>
+
+
+
+	</body>
+
+</html>
